@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介绍</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .skills h3 {
+            margin-bottom: 10px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skills li {
+            margin-bottom: 5px;
+        }
+
+        .navbar {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            border-radius: 30px;
+            backdrop-filter: blur(15px);
+            z-index: 1;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #4682b4;
+        }
+
+        .navbar img {
+            width: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .navbar {
+                padding: 8px;
+                bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="icon/logo.png" alt="Your Avatar">
+        <p>本人会使用 Java & SpringCloud & Redis & MySQL & RabbitMQ & Python & C++ & Web & HTML</p>
+        <p>APP: Nex Web & MH-Ai & 资源魔盒 & 墨核</p>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html" id="home">
+            <img src="icon/user.png" alt="Home">
+            <div>首页</div>
+        </a>
+        <a href="zyhq.html" id="search">
+            <img src="icon/cart.png" alt="Search">
+            <div>功能</div>
+        </a>
+        <a href="introduction.html" id="Cart">
+            <img src="icon/search.png" alt="Cart">
+            <div>我</div>
+        </a>
+        <a href="index.html" id="bk">
+            <img src="icon/My.png" alt="bk">
+            <div>博客</div>
+        </a>
+    </div>
+</body>
+</html>

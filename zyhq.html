@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源获取</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .module {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .module:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .module a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .navbar {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            border-radius: 30px;
+            backdrop-filter: blur(15px);
+            z-index: 1;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: #4682b4;
+        }
+
+        .navbar img {
+            width: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                gap: 10px;
+            }
+
+            .navbar {
+                padding: 8px;
+                bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="module">
+            <a href="zyhq/zyhq.html">资源获取</a>
+        </div>
+        <div class="module">
+            <a href="html/welcome.html">服务器后台</a>
+        </div>
+        <div class="module">
+            <div>AI 网站</div>
+            <a href="https://share.freegpts.org/list" target="_blank">Ai</a>
+            <a href="https://chat4.free2gpt.xyz" target="_blank">Ai</a>
+            <a href="https://agi.ylsap.com" target="_blank">Ai</a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html" id="home">
+            <img src="icon/user.png" alt="Home">
+            <div>首页</div>
+        </a>
+        <a href="zyhq.html" id="search">
+            <img src="icon/cart.png" alt="Search">
+            <div>功能</div>
+        </a>
+        <a href="introduction.html" id="Cart">
+            <img src="icon/search.png" alt="Cart">
+            <div>我</div>
+        </a>
+        <a href="bk.html" id="bk">
+            <img src="icon/My.png" alt="bk">
+            <div>博客</div>
+        </a>
+    </div>
+</body>
+</html>
